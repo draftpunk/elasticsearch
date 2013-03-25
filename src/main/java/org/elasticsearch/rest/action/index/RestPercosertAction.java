@@ -97,7 +97,6 @@ public class RestPercosertAction extends BaseRestHandler {
                     	logger.info("match: " + match);
                     }
                     
-                    
                     IndexRequest indexRequest = new IndexRequest(request.param("index"), request.param("type"), request.param("id"));
                     indexRequest.listenerThreaded(false);
                     indexRequest.operationThreaded(true);
